@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Form</title>
+    <style>
+        div {
+                width: fit-content;
+                position: relative;
+                left: 10%;
+                }
+
+                .field1 {
+                background-color: rgb(237, 243, 172);
+                }
+
+                .sub {
+                position: relative;
+                left: 100px;
+                top: 20px;
+                }
+
+                .firstname {
+                margin-left: 3px;
+                }
+
+                .divfield {
+                margin-left: 20%;
+             }
+    </style>
+  </head>
+  <body>
+    <h1>Resitration Form</h1>
+
+    <div class="container">
+      <form action="">
+        <fieldset class="field1">
+          <legend>Personal details</legend>
+          <label for="" class="lable1">First name:</label
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input class="firstname" type="text" name="" id="" />
+          <br />
+          <label for="">Last name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" name="" id="" /><br />
+          <label for="">Email address:</label>
+          <input type="email" name="" id="" /><br /><br />
+          <label for="">Gender</label>
+          <input type="radio" name="radio" id="r" /><label for="r">Male</label>
+          <input type="radio" name="radio" id="r1" /><label for="r1"
+            >Female</label
+          >
+        </fieldset>
+        <fieldset class="field1">
+          <legend>City</legend>
+          <div class="divfield">
+            <label for="">City</label>
+            <select name="" id="">
+              <option value="Amman">Amman</option>
+              <option value="Irbid">Irbid</option>
+              <option value="Balqa">Balqa</option>
+              <option value="Aqaba">Aqaba</option>
+            </select>
+          </div>
+        </fieldset>
+        <input class="sub" type="submit" value="Subsicribtion" />
+      </form>
+    </div>
+  </body>
+</html>
