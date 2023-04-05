@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"content="width=device-width, initial-scale=1.0"/>
+    <title>grid1</title>
+        <style>
+      main {
+      
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 200px 200px;
+        gap: 30px;
+        width: 70%;
+        margin: 20px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      div {
+        background-color: #444;
+        color: #fff;
+        font-size: 50px;
+        padding: 30px;
+        border-radius: 12px;
+      }
+
+      .A{
+        grid-column: span 2;
+      }
+
+      .B{
+        grid-column: 4;
+      }
+
+      .C{
+        grid-row: 2 / -1;
+      }
+
+      .FGbox{
+        grid-row: 2/4;
+        grid-column: 2/-1;
+        display: grid;
+        justify-content: flex-end;
+      }
+
+      .FGbox span{
+        height: 85%;
+        background-color: #ffffffd8;
+        border-radius: 12px;
+        display: grid;
+        grid-template-rows: auto auto;
+      }
+     .FGbox p {
+        height: 50%;
+        width: 350px;
+        color: #444;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="A">A</div>
+      <div class="B">B</div>
+      <div class="C">C</div>
+      <div class="FGbox">
+        <span>
+          <p>F</p>
+          <p>G</p>
+        </span>
+      </div>
+    </main>
+  </body>
+</html>

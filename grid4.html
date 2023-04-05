@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"3 content="width=device-width, initial-scale=1.0"/>
+    <title>grid4</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      main {
+        width: 800px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(6, 100px);
+        gap: 10px;
+      }
+      div {
+        text-align: center;
+        font-size: 32px;
+        color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .one{
+        background: #ff9b6d;
+
+        grid-row: 1/-1;
+      }
+      .two{
+        background: #ffd37c;
+        grid-column: 2/-1;
+      }
+      .three{
+        background: #c8d878;
+        grid-column: 2/span 4;
+      }
+      .four{
+        background: #7dbca9;
+        grid-column: 6/span 3;
+      }
+     .five{ 
+        background: #87ceeb;
+        grid-column: 2/-1;
+        grid-row: 3/-1;
+      } 
+    </style>
+  </head>
+  <body>
+    <main>
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+    </main>
+  </body>
+</html>
